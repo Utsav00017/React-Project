@@ -22,7 +22,7 @@ function Web() {
         <React.Fragment>
             <Container fluid>
                 <Container className="">
-                    <Form.Group className="mb-3" style={{ width: "30%" }} >
+                    <Form.Group className="mb-3" style={{ width: "100%" }} >
                         <div className="d-flex align-items-center flex-column">
                             <Row className="mt-3 ">Increment/Decrement</Row>
                             <Row className="mt-3 ">
