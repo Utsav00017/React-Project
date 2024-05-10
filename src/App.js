@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Web from './App/Web';
 
 function App() {
   return (
-    <div className="App">
-      <h2>welcome to codeline infotech.</h2>
-    </div>
+    <>
+      <Web/>
+    </>
   );
 }
 
