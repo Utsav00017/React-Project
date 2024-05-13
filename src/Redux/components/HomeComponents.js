@@ -596,7 +596,7 @@ function HomeComponents(props) {
 
     return (
         <React.Fragment>
-            <h2>Home Component</h2>
+            <h2>Component</h2>
             <table>
 
                 <tr>
@@ -624,7 +624,7 @@ function HomeComponents(props) {
                 ))}
                
             </table>
-            
+
         </React.Fragment>
     )
 }
