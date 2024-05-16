@@ -9,15 +9,15 @@ import RootReducer from '../src/Redux/Services/Reducer/RootReducer';
 import HeaderContainer from '../src/Redux/container/HeaderContainer';
 import HomeContainer from '../src/Redux/container/HomeContainer';
 
-const store = createStore(RootReducer);
+// const store = createStore(RootReducer);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Provider store={store}>
+    <App />
+    {/* <Provider store={store}>
         <HeaderContainer/>
         <HomeContainer/>
-    </Provider>
+    </Provider> */}
 
   </React.StrictMode>
 );
