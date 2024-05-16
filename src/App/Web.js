@@ -105,6 +105,7 @@ function Web() {
                     setStaderd("");
                     setGender("");
                     setSkills("");
+                    window.open("https://www.youtube.com/@spectre_NeeL");
                     // toast.success(res.data.message);
                     // window.location.reload();
                 } catch (error) {
