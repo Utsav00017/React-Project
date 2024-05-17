@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import RootReducer from '../src/Redux/Services/Reducer/RootReducer';
 import HeaderContainer from '../src/Redux/container/HeaderContainer';
 import HomeContainer from '../src/Redux/container/HomeContainer';
-import { BrowserRouter,Route,Routes} from "react-router-dom";
+import { BrowserRouter,HashRouter,Route,Routes} from "react-router-dom";
 import Home from "./App/Home";
 
 // const store = createStore(RootReducer);
@@ -16,12 +16,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App/> */}
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/App" element={<App/>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 {/* <Home/> */}
     {/* <Provider store={store}>
         <HeaderContainer/>
