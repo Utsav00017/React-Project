@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Stack } from "react-bootstrap";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 // import App from "../App";
 
 
