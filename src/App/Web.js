@@ -9,46 +9,47 @@ import axios from "axios";
 function Web() {
 
     const [studentList, setStudentList] = useState([]);
-    const [name, setName] = useState('');
-    const [college, setCollege] = useState('');
-    const [standerd, setStaderd] = useState('');
-    const [gender, setGender] = useState('');
-    const [skills, setSkills] = useState([]);
-    const [selectedcheck, setSelectedcheck] = useState([]);
+    // const [name, setName] = useState('');
+    // const [college, setCollege] = useState('');
+    // const [standerd, setStaderd] = useState('');
+    // const [gender, setGender] = useState('');
+    // const [skills, setSkills] = useState([]);
+    // const [selectedcheck, setSelectedcheck] = useState([]);
 
-    //update
-    // const location = useLocation();
-    const [currentmode, setCurrentmode] = useState('add');
-    const [submitbtn, setSubmitbtn] = useState('Submit');
-    // const [submitbtn,setSubmitBtn] = ("Submit");
-    const [studentid, setStudentId] = useState('');
+    // //update
+    // // const location = useLocation();
+    // const [currentmode, setCurrentmode] = useState('add');
+    // const [submitbtn, setSubmitbtn] = useState('Submit');
+    // // const [submitbtn,setSubmitBtn] = ("Submit");
+    // const [studentid, setStudentId] = useState('');
 
-    function handleSkills(e) {
-        debugger
-        if (e.target.checked) {
-            setSkills([...skills, e.target.value])
-        } else {
-            setSkills(skills.filter((item) => item !== e.target.value));
-        }
-    }
+    // function handleSkills(e) {
+    //     debugger
+    //     if (e.target.checked) {
+    //         setSkills([...skills, e.target.value])
+    //     } else {
+    //         setSkills(skills.filter((item) => item !== e.target.value));
+    //     }
+    // }
 
-    function handelCheckbox(e) {
-        debugger
-        if (e.target.checked) {
-            debugger
-            setSelectedcheck([...selectedcheck, parseInt(e.target.value)])
-        } else {
-            setSelectedcheck(selectedcheck.filter((item) => item !== parseInt(e.target.value)));
-        }
-    }
+    // function handelCheckbox(e) {
+    //     debugger
+    //     if (e.target.checked) {
+    //         debugger
+    //         setSelectedcheck([...selectedcheck, parseInt(e.target.value)])
+    //     } else {
+    //         setSelectedcheck(selectedcheck.filter((item) => item !== parseInt(e.target.value)));
+    //     }
+    // }
 
     useEffect(() => {
         fetchAllStudents();
     }, [])
 
     const fetchAllStudents = async () => {
+        debugger
         try {
-            const res = await axios.get("https://react-web-api-ddebd7ea9687.herokuapp.com/studentdetails");
+            const res = await axios.get("https://backend-live-alpha.vercel.app/studentdetails");
             console.log(res);
             setStudentList(res.data)
         } catch (error) {
@@ -57,144 +58,144 @@ function Web() {
     };
 
 
-    const handlesubmit = async (e) => {
-        debugger
+    // const handlesubmit = async (e) => {
+    //     debugger
 
-        if(name == "" ||college == "" || standerd == "" || gender == "" || skills == ""){
-            e.preventDefault();
-            alert("Please Fill Details")
-        }else{
-            var students_detail = {
-                student_name: name,
-                college: college,
-                standerd: standerd,
-                gender: gender,
-                skills: skills.join(',')
-            }
+    //     if(name == "" ||college == "" || standerd == "" || gender == "" || skills == ""){
+    //         e.preventDefault();
+    //         alert("Please Fill Details")
+    //     }else{
+    //         var students_detail = {
+    //             student_name: name,
+    //             college: college,
+    //             standerd: standerd,
+    //             gender: gender,
+    //             skills: skills.join(',')
+    //         }
     
     
-            //update put
+    //         //update put
     
-            if (currentmode == "edit") {
-                // debugger
-                try {
-                    var res = await axios.put("https://react-web-api-ddebd7ea9687.herokuapp.com/editstudentdetails/" + studentid, students_detail);
-                    // toast.success(res.data.message);
-                    setCurrentmode("add");
-                    setSubmitbtn("Submit");
-                    setStudentId("");
-                    setName("");
-                    setCollege("");
-                    setStaderd("");
-                    setGender("");
-                    setSkills("");
-                    await fetchAllStudents();
-                    // setSubmitBtn("Submit");
-                } catch (error) {
-                    console.log(error.message);
-                };
+    //         if (currentmode == "edit") {
+    //             // debugger
+    //             try {
+    //                 var res = await axios.put("https://react-web-api-ddebd7ea9687.herokuapp.com/editstudentdetails/" + studentid, students_detail);
+    //                 // toast.success(res.data.message);
+    //                 setCurrentmode("add");
+    //                 setSubmitbtn("Submit");
+    //                 setStudentId("");
+    //                 setName("");
+    //                 setCollege("");
+    //                 setStaderd("");
+    //                 setGender("");
+    //                 setSkills("");
+    //                 await fetchAllStudents();
+    //                 // setSubmitBtn("Submit");
+    //             } catch (error) {
+    //                 console.log(error.message);
+    //             };
     
-            } else {
-                try {
-                    debugger
-                    var res = await axios.post("https://react-web-api-ddebd7ea9687.herokuapp.com/poststudentdetails", students_detail);
-                    console.log(res);
-                    await fetchAllStudents();
-                    setName("");
-                    setCollege("");
-                    setStaderd("");
-                    setGender("");
-                    setSkills("");
-                    // toast.success(res.data.message);
-                    // window.location.reload();
-                } catch (error) {
-                    console.log(error);
-                };
-            }
-        }
+    //         } else {
+    //             try {
+    //                 debugger
+    //                 var res = await axios.post("https://react-web-api-ddebd7ea9687.herokuapp.com/poststudentdetails", students_detail);
+    //                 console.log(res);
+    //                 await fetchAllStudents();
+    //                 setName("");
+    //                 setCollege("");
+    //                 setStaderd("");
+    //                 setGender("");
+    //                 setSkills("");
+    //                 // toast.success(res.data.message);
+    //                 // window.location.reload();
+    //             } catch (error) {
+    //                 console.log(error);
+    //             };
+    //         }
+    //     }
 
         
-    }
+    // }
 
-    function handleUpdate(sid) {
-        // debugger
-        setCurrentmode("edit");
-        setSubmitbtn("Update");
+    // function handleUpdate(sid) {
+    //     // debugger
+    //     setCurrentmode("edit");
+    //     setSubmitbtn("Update");
 
-        const fetchStudent = async () => {
-            debugger
-            try {
-                const res = await axios.get("https://react-web-api-ddebd7ea9687.herokuapp.com/singlestudentdetails/" + sid);
-                console.log(res);
-                setStudentId(res.data[0].studentid);
-                setName(res.data[0].student_name);
-                setCollege(res.data[0].college);;
-                setStaderd(res.data[0].standerd);
-                setGender(res.data[0].gender);
-                setSkills(res.data[0].skills.split(','));
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        fetchStudent();
-    }
+    //     const fetchStudent = async () => {
+    //         debugger
+    //         try {
+    //             const res = await axios.get("https://react-web-api-ddebd7ea9687.herokuapp.com/singlestudentdetails/" + sid);
+    //             console.log(res);
+    //             setStudentId(res.data[0].studentid);
+    //             setName(res.data[0].student_name);
+    //             setCollege(res.data[0].college);;
+    //             setStaderd(res.data[0].standerd);
+    //             setGender(res.data[0].gender);
+    //             setSkills(res.data[0].skills.split(','));
+    //         } catch (error) {
+    //             console.log(error)
+    //         }
+    //     }
+    //     fetchStudent();
+    // }
 
-    // Delete
+    // // Delete
 
-    const handleDelete = async (sid) => {
-        // debugger
-        try {
-            const res = await axios.delete("https://react-web-api-ddebd7ea9687.herokuapp.com/deletestudentdetails/" + sid);
-            window.location.reload();
-            // toast.warning(res.data.message);
-        } catch (err) {
-            console.log(err);
-        }
-    }
+    // const handleDelete = async (sid) => {
+    //     // debugger
+    //     try {
+    //         const res = await axios.delete("https://react-web-api-ddebd7ea9687.herokuapp.com/deletestudentdetails/" + sid);
+    //         window.location.reload();
+    //         // toast.warning(res.data.message);
+    //     } catch (err) {
+    //         console.log(err);
+    //     }
+    // }
 
-    // Delete Checkbox
+    // // Delete Checkbox
 
-    const handleCheckDelete = async () => {
+    // const handleCheckDelete = async () => {
 
-        // var StudentList = selectedcheck.toString();
-        const sids = { ids: selectedcheck.toString() }
-
-
-        try {
-            const res = await axios.post("https://react-web-api-ddebd7ea9687.herokuapp.com/studentdelete/", sids);
-            debugger
-            setSelectedcheck([]);
-            fetchAllStudents();
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    //     // var StudentList = selectedcheck.toString();
+    //     const sids = { ids: selectedcheck.toString() }
 
 
-    //  View
+    //     try {
+    //         const res = await axios.post("https://react-web-api-ddebd7ea9687.herokuapp.com/studentdelete/", sids);
+    //         debugger
+    //         setSelectedcheck([]);
+    //         fetchAllStudents();
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // }
 
-    const handleView = async (sid) => {
 
-        try {
-            const res = await axios.get("https://react-web-api-ddebd7ea9687.herokuapp.com/singlestudentdetails/" + sid);
-            alert("Student Name :" + res.data[0].student_name +
-                "Student college :" + res.data[0].college +
-                "Student standerd :" + res.data[0].standerd +
-                "Student gender :" + res.data[0].gender +
-                "Student skills :" + res.data[0].skills
-            )
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    // //  View
+
+    // const handleView = async (sid) => {
+
+    //     try {
+    //         const res = await axios.get("https://react-web-api-ddebd7ea9687.herokuapp.com/singlestudentdetails/" + sid);
+    //         alert("Student Name :" + res.data[0].student_name +
+    //             "Student college :" + res.data[0].college +
+    //             "Student standerd :" + res.data[0].standerd +
+    //             "Student gender :" + res.data[0].gender +
+    //             "Student skills :" + res.data[0].skills
+    //         )
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // }
 
     return (
         <React.Fragment>
             <Container fluid>
                 <Container className="">
 
-                    <Form className="form mt-3">
-                        {/* <Form.Group className="mb-3">
+                    {/* <Form className="form mt-3">
+                        <Form.Group className="mb-3">
                     <Row>
                         <Col sm={2}>
                             <Form.Label>Student id</Form.Label>
@@ -203,7 +204,7 @@ function Web() {
                             <Form.Control type="number" placeholder="Enter id" />
                         </Col>
                     </Row>
-                </Form.Group> */}
+                </Form.Group>
                         <Form.Group className="mb-3">
                             <Row>
                                 <Col sm={2}>
@@ -305,7 +306,7 @@ function Web() {
                                 <Button variant="danger" onClick={handleCheckDelete}>Delete</Button>
                             </Col>
                         </Row>
-                    </Form><br /><br /><br />
+                    </Form><br /><br /><br /> */}
 
                     <Table striped bordered hover variant='light' className='mt-3' style={{ width: '100%' }}>
                         <thead>
@@ -326,18 +327,18 @@ function Web() {
                             {
                                 studentList.map((item) =>
                                     <tr>
-                                        <td><input type="checkbox" value={item.studentid} onChange={handelCheckbox} checked={selectedcheck.includes(item.studentid)} /></td>
+                                        {/* <td><input type="checkbox" value={item.studentid} onChange={handelCheckbox} checked={selectedcheck.includes(item.studentid)} /></td> */}
                                         <td>{item.studentid}</td>
                                         <td>{item.student_name}</td>
                                         <td>{item.college}</td>
                                         <td>{item.standerd}</td>
                                         <td>{item.gender}</td>
                                         <td>{item.skills}</td>
-                                        <td style={{ justifyContent: 'space-evenly', display: 'flex' }}>
+                                        {/* <td style={{ justifyContent: 'space-evenly', display: 'flex' }}>
                                             <Button variant="success" onClick={() => handleUpdate(item.studentid)}>Edit</Button>
                                             <Button variant="danger" onClick={() => handleDelete(item.studentid)}>Delete</Button>
                                             <Button variant="info" onClick={() => handleView(item.studentid)}>View</Button>
-                                        </td>
+                                        </td> */}
                                     </tr>
                                 )
                             }

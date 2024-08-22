@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
@@ -10,18 +10,37 @@ import HeaderContainer from '../src/Redux/container/HeaderContainer';
 import HomeContainer from '../src/Redux/container/HomeContainer';
 import { BrowserRouter,HashRouter,Route,Routes} from "react-router-dom";
 import Home from "./App/Home";
+import Business from './Cashbook/Business';
+import BusinessPage from './Cashbook/BusinessPage';
+import Image from './Color/Image';
 
 // const store = createStore(RootReducer);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App/> */}
-      <HashRouter>
+    {/* <Business/>
+    <BusinessPage/> */}
+  {/* <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Business/>}/>
+      <Route path="/BusinessPage/:id" element={<BusinessPage/>}/>
+    </Routes>
+    </BrowserRouter> */}
+    {/* <Image/> */}
+
+
+
+
+
+
+
+    <App/>
+      {/* <HashRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/App" element={<App/>}/>
         </Routes>
-      </HashRouter>
+      </HashRouter> */}
 {/* <Home/> */}
     {/* <Provider store={store}>
         <HeaderContainer/>
