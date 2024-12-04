@@ -1,0 +1,72 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+<<<<<<< HEAD
+=======
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/material": "^6.1.9",
+    "@mui/x-data-grid": "^7.23.0",
+>>>>>>> a3a251a (Zerodha add)
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "init": "^0.1.2",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+<<<<<<< HEAD
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.3.1",
+=======
+    "mdb-react-ui-kit": "^9.0.0",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.2",
+    "react-calendar-heatmap": "^1.9.0",
+    "react-dom": "^18.3.1",
+    "react-modal": "^3.16.1",
+>>>>>>> a3a251a (Zerodha add)
+    "react-redux": "^9.1.2",
+    "react-router": "^6.23.1",
+    "react-router-dom": "^6.23.1",
+    "react-routes": "^0.2.6",
+    "react-scripts": "5.0.1",
+<<<<<<< HEAD
+    "react-toastify": "^10.0.5",
+=======
+    "react-table": "^7.8.0",
+    "react-toastify": "^10.0.5",
+    "react-tooltip": "^5.28.0",
+>>>>>>> a3a251a (Zerodha add)
+    "redux": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
