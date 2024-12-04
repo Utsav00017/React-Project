@@ -1,6 +1,5 @@
 import './App.css';
 import Web from './App/Web';
-import App1 from './Color/Color';
 import Pnl from './Zerodha/Pnl';
 
 function App() {
