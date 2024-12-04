@@ -1,19 +1,10 @@
 import './App.css';
 import Web from './App/Web';
-<<<<<<< HEAD
 import App1 from './Color/Color';
-
-function App() {
-  return (
-    <>
-      <Web/>
-      {/* <App1/> */}
-=======
 import Pnl from './Zerodha/Pnl';
-import './Zerodha/Zerodha.css';
 
 function App() {
- 
+
 
   const trades = [
     // {
@@ -3002,13 +2993,8 @@ function App() {
      
       <Pnl trades={trades} />
       
->>>>>>> a3a251a (Zerodha add)
     </>
   );
 }
 
-<<<<<<< HEAD
 export default App;
-=======
-export default App;
->>>>>>> a3a251a (Zerodha add)

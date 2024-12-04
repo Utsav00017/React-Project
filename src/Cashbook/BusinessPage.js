@@ -542,11 +542,10 @@ function BusinessPage() {
           <Col sm={6}>
             <Form.Label><h5>Send Mail</h5></Form.Label><br></br>
             <Form.Control type="email" onChange={(e)=>handleemail(e)} value={mail}/>
-<<<<<<< HEAD
+
               <Button onClick={SendMail}>Generate Report</Button>
-=======
               <Button onClick={SendMail}>Generate</Button>
->>>>>>> a3a251a (Zerodha add)
+
             </Col>
                   <Col sm={6}>
             <Form.Label><h5>Export Pdf</h5></Form.Label><br></br>
