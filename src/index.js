@@ -10,6 +10,8 @@ import BusinessPage from './Cashbook/BusinessPage';
 import Login from './Zerodha/Login';
 import Pnl from './Zerodha/Pnl';
 import './Zerodha/Zerodha.css';
+import './App.css';
+import './index.css';
 
 // const store = createStore(RootReducer);
 const root = ReactDOM.createRoot(document.getElementById('root'));
