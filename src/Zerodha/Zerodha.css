@@ -1,196 +1,3 @@
-/* .summary {
-    display: flex;
-    gap: 20px;
-  } */
-  
-  /* .summary-item {
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-  } */
-  
-  /* .color-empty {
-    fill: #e0e0e0;
-  }
-  
-  .color-green {
-    fill: #76c7c0;
-  }
-  
-  .color-red {
-    fill: #ff6b6b;
-  }
-  
-  .ReactModal__Overlay {
-    background-color: rgba(0, 0, 0, 0.75);
-  }
-  
-  .ReactModal__Content {
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    outline: none;
-  }
-  
-  /* Grid styling */
-  /* .heatmap-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-  
-  .heatmap-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 50px); 
-    gap: 5px;
-  } */
-  
-  /* .heatmap-square {
-    width: 50px;
-    height: 50px;
-    border-radius: 4px;
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-  } */
-  
-  /* .heatmap-square:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  } */
-  
-  /* Tooltip styling */
-  /* .heatmap-tooltip {
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    pointer-events: none;
-    font-size: 14px;
-    color: #333;
-  } */
-  
-  /* Modal styling */
-  /* .heatmap-modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 100;
-    width: 300px;
-    text-align: center;
-  } */
-  
-  /* .heatmap-modal button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  } */
-  
-  /* .heatmap-modal button:hover {
-    background-color: #0056b3;
-  } */
-/*   
-  .color-square {
-    stroke: #fff;
-    stroke-width: 2;
-  } */
-  
-  /* .tooltip {
-    position: absolute;
-    background: #fff;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    color: #333;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-  } */
-  
-  /* .color-square:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-   */
-  /* .heatmap-cell-lightgray {
-    fill: lightgray !important;
-  }
-  
-  .heatmap-cell-#006400 {
-    fill: #006400 !important;
-  }
-  
-  .heatmap-cell-#32CD32 {
-    fill: #32CD32 !important;
-  }
-  
-  .heatmap-cell-#90EE90 {
-    fill: #90EE90 !important;
-  }
-  
-  .heatmap-cell-#8B0000 {
-    fill: #8B0000 !important;
-  }
-  
-  .heatmap-cell-#FF6347 {
-    fill: #FF6347 !important;
-  }
-  
-  .heatmap-cell-#FFC0CB {
-    fill: #FFC0CB !important;
-  }
-   */
-  /* .calender {
-    height: 150px;
-    width: 1000px;
-  } */
-  
-  /* .color-green-dark {
-    background-color: #004d00;
-  }
-  
-  .color-green-medium {
-    background-color: #007700;
-  }
-  
-  .color-green-light {
-    background-color: #00cc00;
-  }
-  
-  .color-red-dark {
-    background-color: #660000;
-  }
-  
-  .color-red-medium {
-    background-color: #990000;
-  }
-  
-  .color-red-light {
-    background-color: #ff3333;
-  }
-  
-  .color-empty {
-    background-color: #e0e0e0;
-  }
-   */
   .calendar-container {
     width: 100%;
     max-width: 900px;
@@ -232,34 +39,19 @@
     height: 14px;
     margin: 2px;
   }
-  
-  /* .color-green {
-    background-color: #4caf50;
-  }
-  
-  .color-red {
-    background-color: #f44336;
-  }
-  
-  .color-empty {
-    background-color: #e0e0e0;
-  }
-   */
+
   .heatmap-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
-  
-  /* Wrapper around the entire heatmap */
-  .heatmap-wrapper {
+    .heatmap-wrapper {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
   }
   
-  /* Date Filters Styling */
   .date-filters {
     display: flex;
     justify-content: space-between;
@@ -271,7 +63,6 @@
     margin-right: 20px;
   }
   
-  /* Heatmap Container */
   .heatmap-container {
     display: flex;
     justify-content: center;
@@ -282,34 +73,12 @@
     background-color: #f9f9f9;
   }
   
-  /* Heatmap Cell Colors */
-  /* .color-green {
-    background-color: #66bb6a;
-  }
-  
-  .color-red {
-    background-color: #ef5350;
-  }
-  
-  .color-empty {
-    background-color: #e0e0e0;
-  } */
-  
-  /* Tooltip Styles */
   .react-tooltip {
     font-size: 12px;
     color: #fff;
     background-color: #333;
   }
   
-  /* Spacing */
-  /* .react-calendar-heatmap .day {
-    stroke: #fff;
-    stroke-width: 2;
-    rx: 2;
-  } */
-  
-  /* Overall container for heatmap */
   .heatmap-container {
     display: flex;
     flex-direction: row;
@@ -320,14 +89,12 @@
     background-color: #f9f9f9;
   }
   
-  /* Each individual month container */
   .heatmap-month {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
   }
   
-  /* Month label styling */
   .month-label {
     font-size: 14px;
     margin-bottom: 10px;
@@ -384,7 +151,7 @@
 .react-calendar-heatmap .color-red-light,
 .react-calendar-heatmap .color-red-medium,
 .react-calendar-heatmap .color-red-dark {
-  outline: none; /* Remove the border on click */
+  outline: none;
 }
 
 .react-calendar-heatmap .color-empty:focus,
@@ -394,12 +161,11 @@
 .react-calendar-heatmap .color-red-light:focus,
 .react-calendar-heatmap .color-red-medium:focus,
 .react-calendar-heatmap .color-red-dark:focus {
-  outline: 2px solid rgba(0, 0, 0, 0.2); /* Light gray outline */
-  outline-offset: 2px; /* Space between the outline and the cell */
+  outline: 2px solid rgba(0, 0, 0, 0.2); 
+  outline-offset: 2px; 
 }
 
 
-/*  Data Table  */
 .css-yseucu-MuiDataGrid-columnHeaderRow{
   justify-content: space-between;
   border-bottom: 1px solid var(--DataGrid-rowBorderColor);  
@@ -424,7 +190,6 @@
 
 .css-93jtv8-MuiDataGrid-root .MuiDataGrid-row--borderBottom .MuiDataGrid-columnHeader{
   border-bottom: 0px !important;
-  /* border-top: 0px !important; */
 }
 .css-93jtv8-MuiDataGrid-root .MuiDataGrid-cell{
 border-top: 0px !important;
@@ -436,7 +201,6 @@ border-top: 0px !important;
   border-bottom: 0px !important;
 }
 .css-1bgckiu-MuiDataGrid-main{
-  /* width: 80%; */
   margin-top: 50px;
 }
 
