@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./App/Home";
 import Business from './Cashbook/Business';
 import BusinessPage from './Cashbook/BusinessPage';
@@ -18,13 +18,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* Routes for your app */}
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Login/>}/>
         <Route path="/Pnl" element={<App/>}/>
         {/* Add other routes here if needed */}
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     {/* <App/> */}
   </React.StrictMode>
 );
