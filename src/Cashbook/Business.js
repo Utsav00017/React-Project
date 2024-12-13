@@ -44,6 +44,8 @@ function Business() {
             console.log(error);
         }
     }
+      
+     
 
     return (
         <React.Fragment>

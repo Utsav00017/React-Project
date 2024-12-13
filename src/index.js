@@ -12,19 +12,29 @@ import Pnl from './Zerodha/Pnl';
 import './Zerodha/Zerodha.css';
 import './App.css';
 import './index.css';
+import UserRegistration from './userregistration/Userregistration';
 
 // const store = createStore(RootReducer);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* Routes for your app */}
-    <HashRouter>
+    {/* <HashRouter>
+      <Routes>
+        <Route path="/" element={<Business/>}/>
+        <Route path="/BusinessPage/:id" element={<BusinessPage/>}/>
+      </Routes>
+    </HashRouter> */}
+  {/* <Business/> */}
+
+  <HashRouter>
       <Routes>
         <Route path="/" element={<Login/>}/>
         <Route path="/Pnl" element={<App/>}/>
+        <Route path="/register" element={<UserRegistration/>}/>
         {/* Add other routes here if needed */}
       </Routes>
     </HashRouter>
+  {/* <UserRegistration/> */}
     {/* <App/> */}
   </React.StrictMode>
 );

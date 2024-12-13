@@ -66,6 +66,11 @@ function BusinessPage() {
   const [startdate, setStartdate] = useState("");
   const [enddate, setEnddate] = useState("");
 
+  //mail Authentication
+  const[mail,setMail]= useState("");
+  const[otp,setOtp]= useState();
+
+
 
 
   useEffect(() => {
@@ -439,16 +444,21 @@ function BusinessPage() {
     doc.save("report.pdf")
   }
 
-  const[mail,setMail]= useState("");
 
   function handleemail(e){
     debugger
     setMail(e.target.value);
   }
   const SendMail = async()=>{
-    debugger
+    // debugger
+   
+      let Num = Math.floor(100000 + Math.random() * 900000);
+      setOtp(Num);
+      console.log(Num);
+
     var usermail = {
-      mail:mail
+      mail:mail,
+      otp:Num
     }
     try{
       var res = await axios.post("http://localhost:1000/Mail/",usermail);
