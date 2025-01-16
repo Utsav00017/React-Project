@@ -18,21 +18,21 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    
-    <HashRouter>
+    {/* <HashRouter>
       <Routes>
         <Route path="/" element={<Business/>}/>
         <Route path="/BusinessPage/:id" element={<BusinessPage/>}/>
       </Routes>
-    </HashRouter>
+    </HashRouter> */}
   {/* <Business/> */}
 
-  {/* <HashRouter>
+  <HashRouter>
       <Routes>
       <Route path="/" element={<Login/>}/>
       <Route path="/Pnl" element={<App/>}/>
       <Route path="/register" element={<UserRegistration/>}/>
       </Routes>
-    </HashRouter> */}
+    </HashRouter>
   {/* <UserRegistration/> */}
     {/* <App/> */}
  
