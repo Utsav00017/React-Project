@@ -6,18 +6,6 @@ function App() {
 
 
   const trades = [
-    // {
-    //   id: 1,
-    //   symbol: "BTC",
-    //   type: "Buy",
-    //   lot: 0.01,
-    //   entry: "39396.48",
-    //   exit: "40395.78",
-    //   opentime: "2023-12-04",
-    //   date: "2023-12-04",
-    //   Reason: "Take Profit",
-    //   pnl: 10.00,
-    // },
     {
       id: 2,
       symbol: "XAU/USD",
@@ -2981,10 +2969,332 @@ function App() {
     "date": "2024-09-27",
     "Reason": "Stop Loss",
     "pnl": -1.63
-  }
-
-  
-  ];
+  },
+    {
+      "id": 247,
+      "symbol": "BTC",
+      "type": "Sell",
+      "lot": 0.01,
+      "entry": "94,196.22",
+      "exit": "94,334.87",
+      "opentime": "2025-01-01",
+      "date": "2025-01-01",
+      "Reason": "Stop Loss",
+      "pnl": -1.39
+    },
+    {
+      "id": 248,
+      "symbol": "USD/CHF",
+      "type": "Buy",
+      "lot": 0.01,
+      "entry": "0.90501",
+      "exit": "0.90868",
+      "opentime": "2025-01-02",
+      "date": "2025-01-02",
+      "Reason": "Take Profit",
+      "pnl": 4.04
+    },
+    {
+      "id": 249,
+      "symbol": "USD/CHF",
+      "type": "Buy",
+      "lot": 0.01,
+      "entry": "0.91044",
+      "exit": "0.90961",
+      "opentime": "2025-01-03",
+      "date": "2025-01-03",
+      "Reason": "Stop Loss",
+      "pnl": -0.91
+    },
+    {
+      "id": 250,
+      "symbol": "USD/JPY",
+      "type": "Buy",
+      "lot": 0.01,
+      "entry": "157.234",
+      "exit": "157.176",
+      "opentime": "2025-01-03",
+      "date": "2025-01-03",
+      "Reason": "Manual",
+      "pnl": -0.37
+    },
+    {
+      "id": 251,
+      "symbol": "XAU/USD",
+      "type": "Buy",
+      "lot": 0.02,
+      "entry": "2,655.341",
+      "exit": "2,653.837",
+      "opentime": "2025-01-03",
+      "date": "2025-01-03",
+      "Reason": "Stop Loss",
+      "pnl": -3.01
+    },
+    {
+      "id": 252,
+      "symbol": "XAU/USD",
+      "type": "Buy",
+      "lot": 0.01,
+      "entry": "2,655.958",
+      "exit": "2,654.958",
+      "opentime": "2025-01-03",
+      "date": "2025-01-03",
+      "Reason": "Stop Loss",
+      "pnl": -1.00
+    },
+    {
+      "id": 253,
+      "symbol": "XAU/USD",
+      "type": "Buy",
+      "lot": 0.01,
+      "entry": "2,655.905",
+      "exit": "2,654.950",
+      "opentime": "2025-01-03",
+      "date": "2025-01-03",
+      "Reason": "Stop Loss",
+      "pnl": -0.96
+    },
+    {
+      "id": 254,
+      "symbol": "XAU/USD",
+      "type": "Sell",
+      "lot": 0.01,
+      "entry": "2,647.112",
+      "exit": "2,648.582",
+      "opentime": "2025-01-03",
+      "date": "2025-01-03",
+      "Reason": "Stop Loss",
+      "pnl": -1.47
+    },
+    {
+      "id": 255,
+      "symbol": "BTC",
+      "type": "Buy",
+      "lot": 0.01,
+      "entry": "96,992.27",
+      "exit": "97,437.79",
+      "opentime": "2025-01-03",
+      "date": "2025-01-03",
+      "Reason": "Manual",
+      "pnl": 4.46
+    },
+    {
+      "id": 256,
+      "symbol": "BTC",
+      "type": "Buy",
+      "lot": 0.01,
+      "entry": "97,832.27",
+      "exit": "97,674.00",
+      "opentime": "2025-01-04",
+      "date": "2025-01-04",
+      "Reason": "Stop Loss",
+      "pnl": -1.58
+    },
+    {
+      "id": 257,
+      "symbol": "XAU/USD",
+      "type": "Sell",
+      "lot": 0.01,
+      "entry": "2,626.033",
+      "exit": "2,628.078",
+      "opentime": "2025-01-06",
+      "date": "2025-01-06",
+      "Reason": "Stop Loss",
+      "pnl": -2.05
+    },
+    {
+      "id": 258,
+      "symbol": "XAU/USD",
+      "type": "Sell",
+      "lot": 0.01,
+      "entry": "2,625.770",
+      "exit": "2,625.695",
+      "opentime": "2025-01-06",
+      "date": "2025-01-06",
+      "Reason": "Manual",
+      "pnl": 0.07
+    },
+    {
+      "id": 259,
+      "symbol": "XAU/USD",
+      "type": "Buy",
+      "lot": 0.01,
+      "entry": "2,639.550",
+      "exit": "2,659.577",
+      "opentime": "2025-01-07",
+      "date": "2025-01-07",
+      "Reason": "Manual",
+      "pnl": 20.03
+    },
+    {
+      "id": 260,
+      "symbol": "BTC",
+      "type": "Buy",
+      "lot": 0.01,
+      "entry": "95,149.88",
+      "exit": "95,000.49",
+      "opentime": "2025-01-08",
+      "date": "2025-01-08",
+      "Reason": "Manual",
+      "pnl": -1.50
+    },
+    {
+      "id": 261,
+      "symbol": "XAU/USD",
+      "type": "Buy",
+      "lot": 0.01,
+      "entry": "2,672.292",
+      "exit": "2,671.292",
+      "opentime": "2025-01-09",
+      "date": "2025-01-09",
+      "Reason": "Stop Loss",
+      "pnl": -1.00
+    },
+      {
+        "id": 262,
+        "symbol": "USOIL",
+        "type": "Buy",
+        "lot": 0.02,
+        "entry": "73.034",
+        "exit": "73.598",
+        "opentime": "2025-01-09",
+        "date": "2025-01-10",
+        "Reason": "Manual",
+        "pnl": 11.28
+      },
+      {
+        "id": 261,
+        "symbol": "US30",
+        "type": "Buy",
+        "lot": 0.01,
+        "entry": "42,615.1",
+        "exit": "42,314.7",
+        "opentime": "2025-01-09",
+        "date": "2025-01-10",
+        "Reason": "Stop Loss",
+        "pnl": -3.0
+      },
+      {
+        "id": 260,
+        "symbol": "BTC",
+        "type": "Sell",
+        "lot": 0.01,
+        "entry": "93,654.09",
+        "exit": "93,980.41",
+        "opentime": "2025-01-10",
+        "date": "2025-01-10",
+        "Reason": "Stop Loss",
+        "pnl": -3.26
+      },
+      {
+        "id": 259,
+        "symbol": "USD/CHF",
+        "type": "Buy",
+        "lot": 0.03,
+        "entry": "0.91703",
+        "exit": "0.91666",
+        "opentime": "2025-01-10",
+        "date": "2025-01-10",
+        "Reason": "Manual",
+        "pnl": -1.21
+      },
+      {
+        "id": 258,
+        "symbol": "USOIL",
+        "type": "Sell",
+        "lot": 0.02,
+        "entry": "77.085",
+        "exit": "77.262",
+        "opentime": "2025-01-13",
+        "date": "2025-01-13",
+        "Reason": "Stop Loss",
+        "pnl": -3.54
+      },
+      {
+        "id": 257,
+        "symbol": "XAU/USD",
+        "type": "Buy",
+        "lot": 0.01,
+        "entry": "2,669.321",
+        "exit": "2,664.021",
+        "opentime": "2025-01-13",
+        "date": "2025-01-13",
+        "Reason": "Stop Loss",
+        "pnl": -5.3
+      },
+      {
+        "id": 256,
+        "symbol": "USOIL",
+        "type": "Sell",
+        "lot": 0.01,
+        "entry": "77.103",
+        "exit": "77.159",
+        "opentime": "2025-01-14",
+        "date": "2025-01-14",
+        "Reason": "Manual",
+        "pnl": -0.56
+      },
+      {
+        "id": 255,
+        "symbol": "XAU/USD",
+        "type": "Sell",
+        "lot": 0.01,
+        "entry": "2,666.413",
+        "exit": "2,671.410",
+        "opentime": "2025-01-14",
+        "date": "2025-01-14",
+        "Reason": "Stop Loss",
+        "pnl": -5.0
+      },
+      {
+        "id": 254,
+        "symbol": "XAU/USD",
+        "type": "Sell",
+        "lot": 0.01,
+        "entry": "2,662.860",
+        "exit": "2,667.299",
+        "opentime": "2025-01-14",
+        "date": "2025-01-14",
+        "Reason": "Stop Loss",
+        "pnl": -4.44
+      },
+      {
+        "id": 253,
+        "symbol": "XAU/USD",
+        "type": "Buy",
+        "lot": 0.01,
+        "entry": "2,698.983",
+        "exit": "2,702.089",
+        "opentime": "2025-01-16",
+        "date": "2025-01-16",
+        "Reason": "Take Profit",
+        "pnl": 3.11
+      },
+      {
+        "id": 252,
+        "symbol": "BTC",
+        "type": "Buy",
+        "lot": 0.01,
+        "entry": "99,284.23",
+        "exit": "98,959.76",
+        "opentime": "2025-01-16",
+        "date": "2025-01-16",
+        "Reason": "Stop Loss",
+        "pnl": -3.24
+      },
+      {
+        "id": 251,
+        "symbol": "BTC",
+        "type": "Sell",
+        "lot": 0.02,
+        "entry": "98,809.42",
+        "exit": "98,357.97",
+        "opentime": "2025-01-16",
+        "date": "2025-01-16",
+        "Reason": "Manual",
+        "pnl": 9.03
+      }
+    ];
   
   return (
     <>

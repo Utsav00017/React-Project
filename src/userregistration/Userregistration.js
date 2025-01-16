@@ -50,7 +50,7 @@ function UserRegistration() {
             var res = await axios.get("https://backend-live-n3o5qgqev-utsavs-projects-838eb43f.vercel.app/userdetail");
             setUserDetail(res.data);
         } catch (error) {
-            console.log(error);
+            console.log(error); 
         }
     }
 

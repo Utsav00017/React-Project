@@ -16,7 +16,7 @@ const Login = () => {
     // Simple validation
     if (username === '' || password === '') {
       toast.error('Both fields are required!');
-    } else if (username === 'Zerodha' && password === 'Utsav') {
+    } else if (username === 'Utsav' && password === 'Utsav') {
       toast.success('Login successful!');
     //   setTimeout(() => {
         navigate('/Pnl');

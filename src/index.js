@@ -14,28 +14,28 @@ import './App.css';
 import './index.css';
 import UserRegistration from './userregistration/Userregistration';
 
-// const store = createStore(RootReducer);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <HashRouter>
+   
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Business/>}/>
         <Route path="/BusinessPage/:id" element={<BusinessPage/>}/>
       </Routes>
-    </HashRouter> */}
+    </HashRouter>
   {/* <Business/> */}
 
-  <HashRouter>
+  {/* <HashRouter>
       <Routes>
-        <Route path="/" element={<Login/>}/>
-        <Route path="/Pnl" element={<App/>}/>
-        <Route path="/register" element={<UserRegistration/>}/>
-        {/* Add other routes here if needed */}
+      <Route path="/" element={<Login/>}/>
+      <Route path="/Pnl" element={<App/>}/>
+      <Route path="/register" element={<UserRegistration/>}/>
       </Routes>
-    </HashRouter>
+    </HashRouter> */}
   {/* <UserRegistration/> */}
     {/* <App/> */}
+ 
   </React.StrictMode>
 );
 
